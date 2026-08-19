@@ -48,7 +48,9 @@ export default defineConfig(async () => {
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,
     plugins: [
-      vinext(),
+      // This landing page has no server-only routes, so prerender it as static
+      // HTML. It lets the same build run cleanly on Vercel as well as Sites.
+      vinext({ prerender: { routes: "*" } }),
       sites(),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
