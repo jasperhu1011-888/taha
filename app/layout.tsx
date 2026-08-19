@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Taha Property | Private Seller Enquiries",
-  description: "A simple, private way to share your property details and receive a clear response.",
+  title: "Taha Property | Texas homes, thoughtfully found",
+  description: "Personal guidance for buyers looking for their next home in Texas.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
